@@ -1,0 +1,96 @@
+﻿.popbox {
+    display:none;
+}
+
+.fancybox-skin {
+    background: 0 0 !important
+}
+
+.fancybox-skin .fancybox-opened .fancybox-skin {
+    padding: 0 !important
+}
+
+.fancybox-skin .box_modal .box_head_modal {
+    min-height: 16px;
+    padding: 8px 15px;
+    background: #63413e;
+}
+
+.fancybox-skin .box_head_modal h4 {
+    padding-left: 5px;
+    color: #fff;
+    padding-top: 5px
+}
+
+.fancybox-skin .box_modal_content {
+    padding: 10px 15px;
+    background: #f9f9f9
+}
+
+.fancybox-skin .fancybox-close {
+    background: 0 0;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    text-decoration: none !important
+}
+
+.fancybox-skin .fancybox-close:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-decoration: none
+}
+
+.fancybox-skin .fancybox-close:before {
+    color: #fff;
+    content: "x";
+    display: block;
+    font-size: 28px;
+    line-height: 34px;
+    right: 0;
+    text-align: center;
+    top: 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    font-family: Verdana, Arial, Helvetica, Verdana
+}
+
+.fancybox-skin .icon_wrap_modal {
+    position: absolute;
+    left: 0;
+    top: 9px
+}
+
+.liner_input {
+    display: block;
+    border: none !important;
+    background: 0 0 !important;
+    border-bottom: 1px dotted #000 !important;
+    padding: 5px 2px 0 20px !important;
+    font-size: 12px;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none
+}
+
+.fancybox-skin .box_modal_content input[type=text]:focus {
+    outline: 0;
+    border-color: #365f7b !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none
+}
+
+
+.message_mod {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}

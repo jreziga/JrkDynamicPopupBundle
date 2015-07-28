@@ -1,0 +1,6 @@
+services:
+    jrk_dynamic_popup.templating_extension:
+        class: Jrk\DynamicPopupBundle\Twig\Extension\TemplateExtension
+        arguments: [@router]
+        tags:
+            - { name: twig.extension }

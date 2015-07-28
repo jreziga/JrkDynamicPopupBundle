@@ -1,0 +1,15 @@
+{% set ajaxAsset = data.ajaxAsset is defined ? data.ajaxAsset : 'assets/img/app/ajax-loader.gif' %}
+{% set popupTemplate = data.popupTemplate is defined ? data.popupTemplate : 'JrkDynamicPopupBundle:popup:template-popup.html.twig' %}
+
+<div id="wrapper-loader"><div><img src="{{ asset(ajaxAsset) }}" alt="Loading..." title="Loading" /></div></div>
+
+
+<a class="hidden" id="general_modal_trigger" href="#general_modal"></a>
+
+<div id="general_modal" class="popbox box_modal"></div>
+
+<div id="skeleton_modal" class="popbox box_modal">
+   {% include popupTemplate %}
+</div>
+
+

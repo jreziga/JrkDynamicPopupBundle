@@ -1,0 +1,51 @@
+{% verbatim %}
+<div class="box_modal">
+    <div class="clearfix {{=it.modalClass}}">
+        <div class="box_head_modal {{=it.headerClass}}">
+            <h4 class="mb0 white-color f18 modal-title">{{=it.title}}</h4>
+        </div>
+        <div class="box_modal_content">
+            <div class="clearfix grey-2" style="margin-top:{{=it.marginTop}}px;margin-bottom:{{=it.marginBottom}}px;font-size:{{=it.fontSize}}px;color:{{=it.color}}">
+                <span class="modal-label f12">
+                    {{=it.message}}
+                </span>
+
+                {{? it.input }}
+                <input type="{{? it.input.type }}{{=it.input.type}}{{??}}text{{?}}" placeholder="{{? it.input.placeholder }}{{=it.input.placeholder}}{{?}}" class="popbox-input popbox-form-field form-control mt5 {{? it.input.cssClass }}{{=it.input.cssClass}}{{?}}" />
+                {{?}}
+
+                {{? it.select }}
+                <select name="{{? it.select.name }}{{=it.select.name}}{{?}}" id="{{? it.select.id }}{{=it.select.id}}{{?}}" class="popbox-select popbox-form-field form-control mt5 {{? it.select.cssClass }}{{=it.select.cssClass}}{{?}}">
+                    {{~it.select.choices :choice:index}}
+                    <option value="{{=choice.value}}">{{=choice.label}}</option>
+                    {{~}}
+                </select>
+                {{?}}
+            </div>
+            <div class="form_box_row row bt1 tar">
+                <div class="clearfix mt10 pr5">
+                    {{? it.multiple }}
+                    {{~it.choices :choice:index}}
+                        {{? choice.url }}
+                            <a class="{{=choice.buttonClass}}" href="{{=choice.url}}" target="{{=choice.target}}">
+                                {{=choice.label}}
+                            </a>
+                        {{?? choice.action }}
+                            <a class="{{=choice.buttonClass}}" href="javascript:void(0);" __onclick__="{{=choice.action}}">
+                                {{=choice.label}}
+                            </a>
+                        {{??}}
+                            <a class="{{=choice.buttonClass}}" href="javascript:void(0);">
+                                {{=choice.label}}
+                            </a>
+                        {{?}}
+                    {{~}}
+                    {{??}}
+                        <a class="{{=it.buttonClass}}" href="javascript:void(0);" __onclick__="$.fancybox.close()">{{=it.close}}</a>
+                    {{?}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endverbatim %}
