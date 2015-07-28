@@ -172,10 +172,8 @@ This is two examples:
 
 Get data from <input> or <select> by calling that function:
 
-``` js
-
+```
  var formField = getModalFieldElement();
- 
 ```
 
 
