@@ -1,5 +1,5 @@
 Getting started with JrkDynamicPopupBundle
-======================================
+==========================================
 
 Setup
 -----
@@ -172,7 +172,7 @@ This is two examples:
 
 Get data from &lt;input> or &lt;select> by calling that function:
 
-```
+``` js
  var formField = getModalFieldElement();
 ```
 
