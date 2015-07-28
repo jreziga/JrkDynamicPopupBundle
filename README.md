@@ -72,7 +72,7 @@ assetic:
 - 5. Add just after the <body> tag
 
 ```
-    {{ dynamic_popup_template() }}
+ {{ dynamic_popup_template() }}
 ```
 
 You can override two things:
@@ -82,7 +82,7 @@ You can override two things:
 Here is an example:
 
 ```
-    {{ dynamic_popup_template({ ajaxAsset:'img/ajax-loader.gif', popupTemplate: 'MyBundle:Acme:my-custom-doT-template.html.twig' }) }}
+ {{ dynamic_popup_template({ ajaxAsset: 'img/ajax-loader.gif', popupTemplate: 'MyBundle:Acme:my-custom-doT-template.html.twig' }) }}
 ```
 
 
@@ -147,17 +147,17 @@ In fact, these two options are useful only for modalChoices.
 This is two examples:
 
 ``` js
-   modalChoices({
-    ...
-    input: {
+ modalChoices({
+     ...
+     input: {
         placeholder: 'Email address'
-    }
-    ...
-   });
+     }
+     ...
+ });
 
-   modalChoices({
-    ...
-    select: {
+ modalChoices({
+     ...
+     select: {
         name: 'favorite-color',
         id: 'my-select-id',
         choices: [
@@ -165,12 +165,12 @@ This is two examples:
             {value:'#00FF00', label:'Green'},
             {value:'#0000FF', label:'Blue'}
         ]
-    }
-    ...
-   });
+     }
+     ...
+ });
 ```
 
 Get data from <input> or <select> by calling that function:
 ``` js
-    var formField = getModalFieldElement();
+ var formField = getModalFieldElement();
 ```
