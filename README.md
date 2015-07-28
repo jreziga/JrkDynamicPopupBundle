@@ -22,7 +22,7 @@ Update composer
 php composer update
 or 
 php composer.phar update
-
+```
 
 - Add JrkDynamicPopupBundle to your application kernel
 
