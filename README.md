@@ -142,7 +142,7 @@ function doSomething(myThisReference) {
 }
 ```
 
-There are two other mode for both `modalInformation` and `modalChoices`.
+There are two other options for both `modalInformation` and `modalChoices`.
 In fact, these two options are useful only for `modalChoices`.
 This is two examples:
 
