@@ -150,7 +150,8 @@ This is two examples:
  modalChoices({
      ...
      input: {
-        placeholder: 'Email address'
+        placeholder: 'Email address',
+        type: 'text'
      }
      ...
  });
