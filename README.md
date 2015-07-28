@@ -136,7 +136,7 @@ $('a.clickme').function() {
     }, null, $(this));
 }
 
-function(myThisReference) {
+function doSomething(myThisReference) {
     // myThisReference is a reference of 'a.clickme' DOM Element
     ...
 }
