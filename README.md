@@ -8,7 +8,7 @@ JrkDynamicPopupBundle is a dynamic popup manager for Symfony2
 
 - Using composer
 
-Add jrk/dynamicpopup-bundle as a dependency in your project's composer.json file:
+Add `jrk/dynamicpopup-bundle` as a dependency in your project's composer.json file:
 
 ```
 {
@@ -69,15 +69,15 @@ assetic:
  {{ dynamic_popup_javascripts() }}
 ```
 
-- 5. Add just after the <body> tag
+- 5. Add just after the &lt;body> tag
 
 ```
  {{ dynamic_popup_template() }}
 ```
 
 You can override two things:
-- The ajax gif icon for ajax call (ajaxAsset)
-- The js doT template (popupTemplate)
+- The ajax gif icon for ajax call (`ajaxAsset`)
+- The js doT template (`popupTemplate`)
 
 Here is an example:
 
@@ -142,8 +142,8 @@ function doSomething(myThisReference) {
 }
 ```
 
-There are two other mode for both modalInformation and modalChoices.
-In fact, these two options are useful only for modalChoices.
+There are two other mode for both `modalInformation` and `modalChoices`.
+In fact, these two options are useful only for `modalChoices`.
 This is two examples:
 
 ``` js
@@ -170,7 +170,7 @@ This is two examples:
  });
 ```
 
-Get data from <input> or <select> by calling that function:
+Get data from &lt;input> or &lt;select> by calling that function:
 
 ```
  var formField = getModalFieldElement();
