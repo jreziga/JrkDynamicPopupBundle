@@ -43,7 +43,7 @@ public function registerBundles()
 Installation & Configuration
 ----------------------------
 
-1. Add bundle's name in your app/config/config.yml
+- 1. Add bundle's name in your app/config/config.yml
 ```
 # app/config/config.yml
 
@@ -51,25 +51,25 @@ assetic:
    bundles: [ JrkDynamicPopupBundle ]
 ```
 
-2. Execute the following command:
+- 2. Execute the following command:
 ```
-    php app/console assets:install
+ php app/console assets:install
 ```
 
 
-3. Include css files:
+- 3. Include css files:
 
 ```
  {{ dynamic_popup_styles() }}
 ```
 
-4. Include js files:
+- 4. Include js files:
 
 ```
  {{ dynamic_popup_javascripts() }}
 ```
 
-5. Add just after the <body> tag
+- 5. Add just after the <body> tag
 
 ```
     {{ dynamic_popup_template() }}
