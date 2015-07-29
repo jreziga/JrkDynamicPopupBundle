@@ -48,7 +48,7 @@ Installation & Configuration
 # app/config/config.yml
 
 assetic:
-   bundles: [ JrkDynamicPopupBundle ]
+   bundles: [ 'JrkDynamicPopupBundle' ]
 ```
 
 - 2. Execute the following command:
