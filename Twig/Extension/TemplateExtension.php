@@ -35,11 +35,13 @@ class TemplateExtension extends \Twig_Extension {
 
     public function dynamicPopupJs(\Twig_Environment $twig, $opts = null) {
         return $twig->render('JrkDynamicPopupBundle:assets:javascripts.html.twig', array(
+			'data' => $opts
         ));
     }
 
     public function dynamicPopupCss(\Twig_Environment $twig, $opts = null) {
         return $twig->render('JrkDynamicPopupBundle:assets:styles.html.twig', array(
+			'data' => $opts
         ));
     }
 

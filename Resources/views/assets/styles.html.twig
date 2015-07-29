@@ -1,5 +1,34 @@
-{% stylesheets
-'bundles/jrkdynamicpopup/css/jquery.fancybox.css' filter='cssrewrite'
-'bundles/jrkdynamicpopup/css/*.css' filter='cssrewrite' %}
-<link rel="stylesheet" href="{{ asset_url }}" />
-{% endstylesheets %}
+{% set concat = data.concat is defined ? data.concat : false %}
+
+
+{% if concat %}
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/jquery.fancybox.css' filter='cssrewrite'
+	'bundles/jrkdynamicpopup/css/*.css' filter='cssrewrite' %}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+{% else %}
+
+
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/jquery.fancybox.css' filter='cssrewrite'
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/utilities.css' filter='cssrewrite'
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/dynamicajaxloader.css' filter='cssrewrite'
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/dynamicpopup.css' filter='cssrewrite'
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+
+
+{% endif %}
