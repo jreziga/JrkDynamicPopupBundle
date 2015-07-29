@@ -11,22 +11,22 @@
 
 
 	{% stylesheets
-	'bundles/jrkdynamicpopup/css/jquery.fancybox.css' filter='cssrewrite'
+	'bundles/jrkdynamicpopup/css/jquery.fancybox.css' filter='cssrewrite'  %}
+	<link rel="stylesheet" href="{{ asset_url }}" /> 
+	{% endstylesheets %}
+
+	{% stylesheets
+	'bundles/jrkdynamicpopup/css/utilities.css' filter='cssrewrite'  %}
 	<link rel="stylesheet" href="{{ asset_url }}" />
 	{% endstylesheets %}
 
 	{% stylesheets
-	'bundles/jrkdynamicpopup/css/utilities.css' filter='cssrewrite'
+	'bundles/jrkdynamicpopup/css/dynamicajaxloader.css' filter='cssrewrite'  %}
 	<link rel="stylesheet" href="{{ asset_url }}" />
 	{% endstylesheets %}
 
 	{% stylesheets
-	'bundles/jrkdynamicpopup/css/dynamicajaxloader.css' filter='cssrewrite'
-	<link rel="stylesheet" href="{{ asset_url }}" />
-	{% endstylesheets %}
-
-	{% stylesheets
-	'bundles/jrkdynamicpopup/css/dynamicpopup.css' filter='cssrewrite'
+	'bundles/jrkdynamicpopup/css/dynamicpopup.css' filter='cssrewrite'  %}
 	<link rel="stylesheet" href="{{ asset_url }}" />
 	{% endstylesheets %}
 
