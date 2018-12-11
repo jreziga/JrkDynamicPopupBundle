@@ -4,7 +4,7 @@
     "description": "Dynamic popup management bundle for Symfony2",
     "keywords": ["jrk","popup","dynamic","popin","auto","javascript","front","jquery"],
     "homepage": "http://github.com/jr-k/JrkDynamicPopupBundle",
-    "license": "GNU GPL v2",
+    "license": "MIT",
     "authors": [
         {
             "name": "JRK",
